@@ -1,12 +1,13 @@
 {
     "manifest_version": 2,
     "name": "searchBarShortcut",
-    "description": "Use a keyboard shortcut to cycle the focus through the sites search bars",
+    "author": "Michael Berryman",
+    "description": "Mozilla Firefox Web Extension to add a shortcut to move focus to the current page's search bar. If there's currently any text highlighted, then that will be added to the search bar. ",
     "version": "1.0",
     "homepage_url": "https://github.com/MichaelBerryman/searchBarShortcut",
 
     "icons": {
-        "48": "icons/icon-48.png"
+        "48": "icons/icon-48.png",
         "96": "icons/icon-96.png"
     },
 

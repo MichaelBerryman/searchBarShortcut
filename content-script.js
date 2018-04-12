@@ -1,12 +1,9 @@
 function navigateToPagesSearchBar() {
 	
     var selectedText = window.getSelection().toString().trim();
-	console.log("Selected text as passed " + selectedText)
 	
-	var el = document.body.querySelector("input[type='search'], input[name='q'], input[name='search'], input[type='text']");
-	console.log(el)
+	var el = document.body.querySelector("input[type='search'], input[name='q' i], input[name='search' i], input[name='s' i], input[placeholder^='search' i]");
 	if (el !=null) {
-		console.log("element not null")
 		el.focus();
 		if (selectedText.length > 0) {
 			el.value = selectedText
@@ -17,14 +14,8 @@ function navigateToPagesSearchBar() {
 
 window.addEventListener("keydown", function (event) {
     
-    document.activeElement
-	
-	console.log("KeyPressed " + event.key)
-	console.log("Get selection " + window.getSelection().toString().trim())
-    console.log("Current element " + document.activeElement)
-	
   if (event.defaultPrevented || document.activeElement instanceof HTMLTextAreaElement || document.activeElement instanceof HTMLInputElement) {
-    return; // Do nothing if the event was already processed
+    return; // Do nothing if the event was already processed, or if the user is currently in a text box
   }
   
   switch (event.key) {
