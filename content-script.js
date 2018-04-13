@@ -2,7 +2,7 @@ function navigateToPagesSearchBar() {
 	
     var selectedText = window.getSelection().toString().trim();
 	
-	var el = document.body.querySelector("input[type='search'], input[name='q' i], input[name='search' i], input[name='s' i], input[placeholder^='search' i]");
+	var el = document.body.querySelector("input[type='search'], input[name='q' i], input[name='search' i], input[name='s' i], input[placeholder^='search' i], input[aria-label^='search' i]");
 	if (el !=null) {
 		el.focus();
 		if (selectedText.length > 0) {
