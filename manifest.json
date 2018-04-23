@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "searchBarShortcut",
     "author": "Michael Berryman",
-    "description": "Mozilla Firefox Web Extension to add a shortcut "/" to move focus to the current page's search bar. If there's currently any text highlighted, then that will be added to the search bar. ",
+    "description": "Mozilla Firefox Web Extension to add a shortcut \"/\" to move focus to the current page's search bar. If there's currently any text highlighted, then that will be added to the search bar. ",
     "version": "1.0",
     "homepage_url": "https://github.com/MichaelBerryman/searchBarShortcut",
 
@@ -13,6 +13,6 @@
 
     "content_scripts": [{
         "matches": ["<all_urls>"],
-        "js": ["content-script.js"]
+        "js": ["add-on/content-script.js"]
     }]
 }
